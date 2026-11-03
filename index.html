@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en" data-hero="studio" data-wow="burst" data-hud="stay" data-accent="lime" data-press="timeline" data-photos="sheet" data-seams="rebate" data-tail="behind">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kylan MacKenzie — Actor</title>
+<meta name="description" content="Kylan MacKenzie, actor based in Vancouver, BC. Featured work, press, photos and credits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<script>if (!/[?&]options\b/.test(location.search)) document.documentElement.classList.add('no-mock');</script>
+<script>
+  // Phones: pin the hero to the first screen height, in px. In-app browsers (Instagram etc.) resize the whole
+  // viewport, svh included, as their toolbar slides away on scroll, so a svh/innerHeight hero grows mid-scroll.
+  // Only a width change (rotation) re-measures. Desktop keeps plain svh. Size the hero with var(--screen, 100svh).
+  (() => { if (!matchMedia('(pointer: coarse)').matches) return;
+    const r = document.documentElement; let w = 0;
+    const pin = () => { if (innerWidth === w) return; w = innerWidth; r.style.setProperty('--screen', innerHeight + 'px'); };
+    pin(); addEventListener('resize', pin); })();
+</script>
+<style>
+  :root {
+    --studio: #959694;      /* sampled from the hero photo's backdrop */
+    --studio-hi: #a6a7a5;
+    --studio-lo: #858684;
+    --ink: #111211;
+    --ink-2: #1b1c1b;
+    --bone: #ecebe6;
+    --paper: #e4e2db;
+    --ash: #9c9b95;
+    --soot: #4c4b47;
+    --gutter: clamp(16px, 5vw, 72px);
+    --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --serif: "Instrument Serif", Georgia, serif;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+  [data-accent="lime"]   { --accent: #d8f23c; --accent-ink: #4f5c00; --lock: #d8f23c; }
+  [data-accent="cognac"] { --accent: #d39a62; --accent-ink: #7a4520; --lock: #f0c08a; }
+  [data-accent="mono"]   { --accent: #f4f3ee; --accent-ink: #111; --lock: #ffffff; }
+
+  * { box-sizing: border-box; }
+  html { background: var(--studio); scroll-behavior: smooth; }
+  html.at-end { background: var(--ink); }
+  body { margin: 0; font: 400 18px/1.55 var(--sans); color: var(--bone); background: var(--ink); -webkit-font-smoothing: antialiased; overflow-x: clip; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  .wrap { width: min(1240px, 100%); margin-inline: auto; padding-inline: var(--gutter); }
+  .sec { padding-block: clamp(72px, 9vw, 128px); position: relative; }
+  .sec-title { font: 800 clamp(44px, 6.4vw, 92px)/.9 var(--sans); font-stretch: 112%; text-transform: uppercase; letter-spacing: -.01em; margin: 0 0 clamp(36px, 5vw, 64px); display: flex; align-items: baseline; gap: .3em; }
+  .sec-title em { font: italic 400 1.08em/1 var(--serif); text-transform: none; letter-spacing: 0; color: var(--accent); }
+  .light .sec-title em { color: var(--accent-ink); }
+
+  /* ---------- Hero: a camera viewfinder ---------- */
+  .hero {
+    position: relative; height: var(--screen, 100svh); min-height: 560px; overflow: hidden; color: var(--ink);
+    background: radial-gradient(ellipse 60% 85% at 68% 38%, var(--studio-hi), var(--studio) 60%, var(--studio-lo));
+    isolation: isolate;
+  }
+  .hero-photo {
+    position: absolute; z-index: 1; top: 0; right: max(0px, calc(50% - 700px)); height: calc(var(--screen, 100svh) * 1.06); min-height: 594px;
+    aspect-ratio: 900 / 1150; width: auto; object-fit: cover;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 24%, #000 80%, transparent), linear-gradient(to bottom, #000 78%, transparent), radial-gradient(circle at 100% 0, transparent 13%, #000 27%);
+    -webkit-mask-composite: source-in; mask-composite: intersect;
+    mask-image: linear-gradient(to right, transparent, #000 24%, #000 80%, transparent), linear-gradient(to bottom, #000 78%, transparent), radial-gradient(circle at 100% 0, transparent 13%, #000 27%);
+    transform-origin: 50% 15%;
+  }
+  .hero-photo.tea { display: none; aspect-ratio: 1202 / 1600; transform-origin: 46% 30%; }
+  [data-hero="tea"] .hero-photo.studio { display: none; }
+  [data-hero="tea"] .hero-photo.tea { display: block; }
+
+  .hero-name { position: absolute; z-index: 3; left: var(--gutter); bottom: clamp(96px, 15%, 150px); margin: 0; line-height: .82; }
+  .hero-name .first { display: block; font: italic 400 clamp(120px, 15.5vw, 250px)/.8 var(--serif); letter-spacing: -.01em; padding: .06em .12em .1em 0; }
+  .hero-name .last { display: block; font: 800 clamp(30px, 4.3vw, 70px)/1 var(--sans); font-stretch: 125%; letter-spacing: .1em; text-transform: uppercase; margin-top: .12em; }
+  .hero-name .w { display: inline-block; overflow: hidden; vertical-align: bottom; }
+  .hero-name .w > span { display: inline-block; }
+  /* the mask box is padded so the y's tail isn't clipped (script/italic glyphs overhang their box) */
+  .hero-name .first .w { padding: .12em .16em .36em 0; margin: -.12em -.16em -.36em 0; }
+  .hero-name .last { position: relative; z-index: 1; }
+  /* A: the tail runs behind MACKENZIE — a backdrop-coloured stroke cuts it where they cross */
+  [data-tail="behind"] .hero-name .last { -webkit-text-stroke: .13em #8a8b89; paint-order: stroke fill; }   /* sampled: the backdrop under the surname runs #858684–#90918f */
+  /* B: names pulled apart so the tail clears */
+  [data-tail="apart"] .hero-name .first { padding-bottom: .3em; }
+
+  /* viewfinder furniture */
+  .vf { position: absolute; inset: 14px; z-index: 4; pointer-events: none; color: #fff; }
+  .vf i { position: absolute; width: 38px; height: 38px; border: 2px solid currentColor; opacity: .9; }
+  .vf i:nth-child(1) { top: 0; left: 0; border-width: 2px 0 0 2px; }
+  .vf i:nth-child(2) { top: 0; right: 0; border-width: 2px 2px 0 0; }
+  .vf i:nth-child(3) { bottom: 0; left: 0; border-width: 0 0 2px 2px; }
+  .vf i:nth-child(4) { bottom: 0; right: 0; border-width: 0 2px 2px 0; }
+  .hud { position: absolute; z-index: 5; font: 500 12px/1.3 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.25); white-space: nowrap; }
+  .hud-read { left: calc(14px + 26px); bottom: calc(14px + 22px); display: flex; gap: 18px; align-items: center; }
+  .hud-read .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--lock); box-shadow: 0 0 0 2px rgba(0,0,0,.18); }
+  .hud-count { right: calc(14px + 26px); bottom: calc(14px + 22px); text-align: right; }
+  .hud-count b { font: 700 28px/1 var(--mono); letter-spacing: .02em; display: block; }
+  .hud-mode { right: calc(14px + 26px); }
+
+  .af { position: absolute; z-index: 5; left: 0; top: 0; width: 120px; height: 120px; pointer-events: none; opacity: 0; color: #fff; }
+  .af::before, .af::after { content: ""; position: absolute; inset: 0; border: 2px solid currentColor; clip-path: polygon(0 0, 28% 0, 28% 2px, 2px 2px, 2px 28%, 0 28%, 0 72%, 2px 72%, 2px calc(100% - 2px), 28% calc(100% - 2px), 28% 100%, 0 100%); }
+  .af::after { transform: scaleX(-1); }
+  .af.lock { color: var(--lock); }
+  .af .ring { position: absolute; inset: -2px; border: 2px solid var(--lock); opacity: 0; }
+
+  .flash { position: absolute; inset: 0; z-index: 6; background: #fff; opacity: 0; pointer-events: none; }
+  .burst { position: absolute; inset: 0; z-index: 2; background: var(--ink); opacity: 0; pointer-events: none; }
+  .burst img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+  .burst.blink img { opacity: 0; }
+
+  .nav { position: absolute; z-index: 7; top: 0; left: 0; right: 0; display: flex; justify-content: flex-start; align-items: center; gap: 44px; padding: 30px calc(14px + 26px); }
+  /* menu option C: ink links on the left beside KM, over the plain grey (desktop); phones keep the MENU button */
+  .nav-links { display: flex; gap: 26px; }
+  .nav-links a { font: 700 12px/1 var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--ink); text-decoration: none; padding: 4px 0; border-bottom: 2px solid transparent; transition: border-color .2s; }
+  .nav-links a:hover { border-bottom-color: var(--ink); }
+  @media (min-width: 821px) { body > .menu-btn { display: none; } }
+  .mono-km { font: 800 15px/1 var(--sans); font-stretch: 125%; letter-spacing: .18em; color: var(--ink); text-decoration: none; }
+  /* the menu: one MENU button, fixed top-right so it stays with the page, opening a full-screen menu */
+  .menu-btn { position: fixed; z-index: 40; top: calc(21px + env(safe-area-inset-top)); right: calc(14px + 26px); display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px; border: 1px solid rgba(236, 235, 230, .22); background: var(--ink); color: var(--bone); font: 700 13px/1 var(--mono); letter-spacing: .18em; text-transform: uppercase; cursor: pointer; transition: background .2s, color .2s, opacity .8s .5s; }
+  .menu-btn i { width: 18px; height: 2px; background: var(--accent); box-shadow: 0 -5px 0 var(--accent), 0 5px 0 var(--accent); }
+  .menu-btn:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+  .menu-btn:hover i { background: var(--ink); box-shadow: 0 -5px 0 var(--ink), 0 5px 0 var(--ink); }
+  .js:not(.hero-ready) .menu-btn { opacity: 0; pointer-events: none; }
+  .hud-mode { top: 92px; }
+  .menu-over { display: none; }
+  .menu-over[open] { display: flex; position: fixed; inset: 0; z-index: 50; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; border: 0; padding: var(--gutter); background: var(--ink); color: var(--bone); flex-direction: column; justify-content: center; }
+  .menu-over a { display: block; width: max-content; font: 800 clamp(44px, 9vw, 120px)/1 var(--sans); font-stretch: 112%; text-transform: uppercase; text-decoration: none; padding: .04em 0; }
+  .menu-over a:hover { color: var(--accent); }
+  .menu-over a span { font: 700 13px/1 var(--mono); letter-spacing: .14em; color: var(--accent); vertical-align: super; margin-right: 14px; }
+  .menu-over .menu-close { position: absolute; top: 26px; right: 30px; width: 52px; height: 52px; border: 2px solid var(--bone); background: none; color: var(--bone); font: 400 30px/1 var(--sans); cursor: pointer; }
+  .menu-over .menu-close:hover { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+
+  /* load states. Without JS (or reduced motion) everything just shows. */
+  .js .hero:not(.done) .hero-name .w > span { transform: translateY(105%); }
+  .js .hero:not(.done) .hero-name .first .w > span { transform: translateY(150%); }
+  .hero-name .w > span { transition: transform .9s cubic-bezier(.2,.8,.2,1); }
+  .hero-name .last .w > span { transition-delay: .12s; }
+  .hero.done .hero-name .last { animation: track 1.3s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes track { from { letter-spacing: .5em; opacity: 0; } to { letter-spacing: .1em; opacity: 1; } }
+  .js .hero.hunting .hero-photo { animation: hunt 1.5s steps(1) both; }
+  @keyframes hunt {
+    0% { filter: blur(10px) brightness(.55); transform: scale(1.04); } 18% { filter: blur(3px) brightness(.6); transform: scale(1.03); }
+    34% { filter: blur(8px) brightness(.62); transform: scale(1.035); } 52% { filter: blur(1.5px) brightness(.66); transform: scale(1.02); }
+    68% { filter: blur(5px) brightness(.68); transform: scale(1.025); } 84% { filter: blur(.6px) brightness(.7); transform: scale(1.01); } 100% { filter: blur(0) brightness(.7); transform: none; }
+  }
+  .js .hero.prelock .hero-photo { filter: brightness(.55) blur(10px); }
+  .hero.flashed .hero-photo { animation: expose 1.6s ease-out; }
+  @keyframes expose { from { filter: brightness(1.7) contrast(.8); } to { filter: none; } }
+  .js .hero:not(.done) .hud, .js .hero:not(.done):not(.hunting):not(.flashed) .vf { opacity: 0; }
+  .js .hero.hunting .vf, .js .hero.hunting .hud { opacity: 1; transition: opacity .3s; }
+  .hero.done .vf { transition: opacity 1.2s 1.6s; }
+  [data-hud="fade"] .hero.done .vf, [data-hud="fade"] .hero.done .hud-mode { opacity: 0; }
+  [data-hud="stay"] .hero.done .vf { opacity: .55; }
+  .js .hero:not(.done) .nav { opacity: 0; }
+  .hero.done .nav { opacity: 1; transition: opacity .8s .5s; }
+
+  /* film rebate: the seam between sections */
+  .rebate { position: relative; z-index: 2; height: 34px; background: #0a0a0a; overflow: hidden; display: none; }
+  [data-seams="rebate"] .rebate { display: block; }
+  .rebate::before, .rebate::after { content: ""; position: absolute; left: 0; right: 0; height: 5px; background: repeating-linear-gradient(90deg, transparent 0 9px, #3a3a37 9px 17px); }
+  .rebate::before { top: 4px; } .rebate::after { bottom: 4px; }
+  .rebate span { position: absolute; top: 50%; transform: translateY(-50%); left: 0; white-space: nowrap; font: 700 10px/1 var(--mono); letter-spacing: .2em; color: var(--accent); opacity: .85; }
+
+  /* ---------- Featured work ---------- */
+  .work { background: var(--ink); }
+  .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(18px, 2.4vw, 32px); }
+  .feat { position: relative; display: flex; flex-direction: column; text-decoration: none; }
+  .feat-media { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--ink-2); }
+  .feat-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2,.8,.2,1), filter .5s; filter: saturate(.9); }
+  .feat:hover .feat-media img { transform: scale(1.04); filter: none; }
+  .feat-media .af2 { position: absolute; inset: 14%; border: 0; opacity: 0; transition: opacity .25s, inset .35s cubic-bezier(.2,.8,.2,1); }
+  .feat-media .af2::before, .feat-media .af2::after { content: ""; position: absolute; inset: 0; border: 2px solid var(--accent); clip-path: polygon(0 0, 22% 0, 22% 2px, 2px 2px, 2px 22%, 0 22%, 0 78%, 2px 78%, 2px calc(100% - 2px), 22% calc(100% - 2px), 22% 100%, 0 100%); }
+  .feat-media .af2::after { transform: scaleX(-1); }
+  .feat:hover .af2 { opacity: 1; inset: 8%; }
+  .feat-tag { position: absolute; z-index: 1; left: 12px; top: 12px; font: 700 11px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; background: var(--accent); color: var(--ink); padding: 7px 9px; }
+  .feat h3 { margin: 18px 0 4px; font: 700 21px/1.2 var(--sans); }
+  .feat p { margin: 0; color: var(--ash); font-size: 16px; }
+  .feat p em { font: italic 400 19px/1 var(--serif); color: var(--bone); }
+  .feat-stat { display: grid; place-content: center; text-align: center; background:
+      radial-gradient(circle at 50% 42%, rgba(216,242,60,.10), transparent 60%), var(--ink-2); border: 1px solid #2a2b29; }
+  [data-accent="cognac"] .feat-stat { background: radial-gradient(circle at 50% 42%, rgba(211,154,98,.12), transparent 60%), var(--ink-2); }
+  .feat-stat b { font: 800 clamp(64px, 8vw, 116px)/.9 var(--sans); font-stretch: 112%; color: var(--accent); letter-spacing: -.02em; }
+  .feat-stat span { font: 600 12px/1.4 var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--bone); margin-top: 10px; }
+  .feat-stat small { font: italic 400 18px/1.3 var(--serif); color: var(--ash); margin-top: 14px; padding-inline: 18%; }
+
+  /* ---------- Press ---------- */
+  .press { background: var(--bone); color: var(--ink); }
+  .press .sec-title { color: var(--ink); }
+  .tl-wrap { position: relative; }
+  .tl { position: relative; list-style: none; margin: 0; padding: 0; }
+  .tl::before { content: ""; position: absolute; left: 50%; top: 6px; bottom: 6px; width: 2px; margin-left: -1px; background: rgba(17,18,17,.14); }
+  .tl-spine { position: absolute; left: 50%; top: 6px; width: 2px; margin-left: -1px; height: 0; background: var(--ink); }
+  .tl li { position: relative; display: grid; grid-template-columns: 1fr 120px 1fr; align-items: start; margin-bottom: clamp(24px, 3vw, 40px); }
+  .tl-year { grid-column: 2; justify-self: center; position: relative; z-index: 1; background: var(--bone); padding: 2px 8px; font: 700 13px/1 var(--mono); letter-spacing: .14em; }
+  .tl-year::after { content: ""; display: block; width: 10px; height: 10px; border-radius: 50%; margin: 8px auto 0; background: var(--ink); box-shadow: 0 0 0 4px var(--bone); }
+  .tl li.art .tl-year::after { background: var(--accent); box-shadow: 0 0 0 4px var(--bone), 0 0 0 5px var(--ink); }
+  .tl li:nth-child(odd) .tl-body { grid-column: 1; grid-row: 1; text-align: right; }
+  .tl li:nth-child(even) .tl-body { grid-column: 3; grid-row: 1; }
+  .tl-note { margin: 0; padding-top: 2px; font: italic 400 22px/1.3 var(--serif); color: var(--soot); max-width: 440px; }
+  .tl li:nth-child(odd) .tl-note { margin-left: auto; }
+  .clip { position: relative; display: block; text-align: left; background: #fbfaf6; color: var(--ink); text-decoration: none; padding: 22px 24px 20px; box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 14px 30px -18px rgba(0,0,0,.35); border-top: 4px solid var(--ink); transition: transform .3s cubic-bezier(.2,.8,.2,1), box-shadow .3s; }
+  .clip:hover { transform: translateY(-3px); box-shadow: 0 1px 0 rgba(0,0,0,.06), 0 22px 36px -18px rgba(0,0,0,.45); }
+  .clip-out { display: flex; justify-content: space-between; gap: 12px; font: 700 11px/1.3 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--soot); }
+  .clip h3 { margin: 12px 0 10px; font: 400 clamp(26px, 2.6vw, 34px)/1.08 var(--serif); letter-spacing: -.005em; }
+  .clip blockquote { margin: 0 0 14px; padding-left: 14px; border-left: 3px solid var(--accent-ink); font: italic 400 19px/1.35 var(--serif); color: var(--soot); }
+  .clip blockquote cite { display: block; margin-top: 4px; font: 500 12px/1.3 var(--sans); font-style: normal; letter-spacing: .02em; color: var(--ash); }
+  .clip p { margin: 0 0 14px; font-size: 16px; color: var(--soot); }
+  .clip .go { font: 700 13px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; border-bottom: 2px solid var(--accent-ink); padding-bottom: 3px; }
+  [data-accent="lime"] .clip .go { border-color: #a7c414; }
+  .clip.video h3::before { content: ""; display: inline-block; width: 0; height: 0; border-style: solid; border-width: .3em 0 .3em .52em; border-color: transparent transparent transparent currentColor; margin-right: .3em; vertical-align: .08em; }
+  /* scroll reveal */
+  .js .tl li { opacity: 0; transform: translateY(18px); transition: opacity .7s, transform .7s cubic-bezier(.2,.8,.2,1); }
+  .js .tl li.in { opacity: 1; transform: none; }
+  /* B: headline wall — the four articles as clippings */
+  [data-press="wall"] .tl { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(22px, 3vw, 44px); }
+  [data-press="wall"] .tl::before, [data-press="wall"] .tl-spine, [data-press="wall"] .tl li:not(.art), [data-press="wall"] .tl-year { display: none; }
+  [data-press="wall"] .tl li { display: block; margin: 0; }
+  [data-press="wall"] .tl li .tl-body { text-align: left; }
+  [data-press="wall"] .tl li:nth-child(4n+1) .clip { rotate: -1.2deg; } [data-press="wall"] .tl li:nth-child(4n+2) .clip { rotate: .8deg; }
+  [data-press="wall"] .tl li:nth-child(4n+3) .clip { rotate: .6deg; } [data-press="wall"] .tl li:nth-child(4n) .clip { rotate: -.7deg; }
+  [data-press="wall"] .clip h3 { font-size: clamp(30px, 3.4vw, 46px); }
+  [data-press="wall"] .clip-out { border-bottom: 1px solid rgba(0,0,0,.2); padding-bottom: 10px; }
+
+  /* ---------- Photos: a contact sheet ---------- */
+  .photos { background: var(--ink); }
+  .sheet { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 clamp(10px, 1.4vw, 18px); background: #070707; padding: clamp(14px, 2vw, 24px) clamp(14px, 2vw, 24px) 6px; }
+  .frame { all: unset; position: relative; display: block; cursor: zoom-in; margin-bottom: 4px; }
+  .frame img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; transition: filter .4s; }
+  .frame:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .frame .no { display: flex; justify-content: space-between; padding: 7px 2px 10px; font: 700 10px/1 var(--mono); letter-spacing: .18em; color: var(--accent); opacity: .8; }
+  [data-photos="sheet"] .sheet:hover .frame img { filter: brightness(.55) grayscale(.4); }
+  [data-photos="sheet"] .sheet .frame:hover img { filter: none; }
+  .frame svg { position: absolute; left: -5%; top: -3%; width: 110%; height: 98%; overflow: visible; pointer-events: none; }
+  .frame svg path { fill: none; stroke: var(--accent); stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+  .js .frame svg path { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); transition: stroke-dashoffset 1.1s cubic-bezier(.6,.1,.3,1); }
+  .js .sheet.in .frame svg path { stroke-dashoffset: 0; }
+  .js .sheet.in .frame svg path.tick { transition-delay: 1s; transition-duration: .35s; }
+  [data-photos="grid"] .sheet { background: none; padding: 0; gap: clamp(10px, 1.4vw, 18px); }
+  [data-photos="grid"] .frame .no, [data-photos="grid"] .frame svg { display: none; }
+  .lightbox { border: 0; padding: 0; background: transparent; max-width: 100vw; max-height: 100vh; overflow: visible; }
+  .lightbox::backdrop { background: rgba(8, 8, 8, .95); }
+  .lightbox img { max-height: 88vh; max-width: 86vw; }
+  .lightbox button { position: fixed; background: var(--ink); color: var(--bone); border: 2px solid var(--bone); width: 50px; height: 50px; font: 400 26px/1 var(--sans); cursor: pointer; }
+  .lightbox button:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+  .lightbox .prev { left: 16px; top: calc(50% - 25px); } .lightbox .next { right: 16px; top: calc(50% - 25px); }
+  .lightbox .close { top: 16px; right: 16px; }
+
+  /* ---------- Credits ---------- */
+  .credits-sec { background: var(--bone); color: var(--ink); }
+  .credits { display: grid; grid-template-columns: repeat(var(--cols, 3), 1fr); gap: 0 clamp(28px, 4vw, 56px); border-bottom: 3px solid var(--ink); padding-bottom: 26px; }
+  .credit-keep { display: flow-root; }
+  .credit-col > :first-child h3 { margin-top: 0; }
+  .credits h3 { margin: 34px 0 6px; padding-bottom: 8px; border-bottom: 3px solid var(--ink); font: 800 22px/1 var(--sans); font-stretch: 118%; letter-spacing: .06em; text-transform: uppercase; display: flex; justify-content: space-between; align-items: baseline; }
+  .credits h3 small { font: 700 12px/1 var(--mono); letter-spacing: .12em; color: var(--accent-ink); }
+  .credit { display: grid; grid-template-columns: 1fr auto; column-gap: 16px; padding: 10px 0; border-bottom: 1px solid rgba(0, 0, 0, .14); }
+  .credit-title { font-weight: 700; line-height: 1.3; font-size: 17px; }
+  .credit-role { grid-row: 2; color: var(--soot); font: italic 400 18px/1.35 var(--serif); }
+  .credit-year { grid-row: 1 / span 2; grid-column: 2; font: 600 13px/1.6 var(--mono); }
+  .credit-col > :last-child .credit:last-child, .credit-col > .credit:last-child { border-bottom: 0; }
+  .credits-note { margin: 16px 0 0; font-size: 14px; color: var(--soot); }
+
+  /* ---------- Footer ---------- */
+  .footer { background: var(--ink); padding: clamp(80px, 10vw, 140px) 0 calc(28px + env(safe-area-inset-bottom)); position: relative; overflow: hidden; }
+  .footer h2 { margin: 0 0 clamp(36px, 5vw, 60px); font: 800 clamp(40px, 7.4vw, 108px)/.9 var(--sans); font-stretch: 112%; text-transform: uppercase; white-space: nowrap; }
+  .footer h2 em { font: italic 400 1.08em/1 var(--serif); text-transform: none; color: var(--accent); }
+  .foot-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 36px 48px; align-items: start; }
+  .foot-grid h3 { margin: 0 0 12px; font: 700 12px/1 var(--mono); letter-spacing: .18em; text-transform: uppercase; color: var(--ash); }
+  .foot-grid p, .foot-grid ul, .foot-grid dl { margin: 0; padding: 0; list-style: none; }
+  .foot-grid li + li { margin-top: 6px; }
+  .foot-grid ul a { text-decoration: none; border-bottom: 2px solid var(--accent); }
+  .foot-grid ul a:hover { color: var(--accent); }
+  .btn { display: inline-flex; align-items: center; gap: 12px; padding: 16px 24px; background: var(--accent); color: var(--ink); font: 700 15px/1 var(--sans); letter-spacing: .02em; text-decoration: none; border: 2px solid var(--accent); }
+  .btn:hover { background: transparent; color: var(--accent); }
+  .lead-note { margin: 16px 0 0 !important; color: var(--ash); font-size: 15px; max-width: 34ch; }
+  .stats { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; }
+  .stats dt { font: 700 12px/1.7 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ash); }
+  .stats dd { margin: 0; }
+  .colophon { margin-top: clamp(64px, 8vw, 100px); display: flex; justify-content: space-between; gap: 16px; color: var(--ash); font: 500 12px/1.4 var(--mono); letter-spacing: .14em; text-transform: uppercase; }
+
+  /* ---------- Phones ---------- */
+  @media (max-width: 820px) {
+    .hero-photo, .hero-photo.tea { right: 50%; transform: translateX(50%); height: calc(var(--screen, 100svh) * .9); min-height: 500px;
+      -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 92%), radial-gradient(circle at 100% 0, transparent 12%, #000 26%);
+      mask-image: linear-gradient(to bottom, #000 55%, transparent 92%), radial-gradient(circle at 100% 0, transparent 12%, #000 26%); }
+    .js .hero.hunting .hero-photo { animation-name: hunt-m; }
+    @keyframes hunt-m { 0% { filter: blur(10px) brightness(.55); } 30% { filter: blur(4px) brightness(.6); } 55% { filter: blur(7px) brightness(.64); } 80% { filter: blur(1px) brightness(.68); } 100% { filter: none; } }
+    .hero-name { bottom: 78px; left: 26px; right: 26px; }
+    .hero-name .first { font-size: clamp(92px, 27vw, 140px); }
+    .hero-name .last { font-size: clamp(22px, 6.9vw, 34px); }
+    .nav { padding: 26px 30px; }
+    .nav-links { display: none; }
+    .menu-btn { top: calc(17px + env(safe-area-inset-top)); right: 30px; }
+    .vf i:nth-child(2) { display: none; }   /* the MENU button takes the top-right corner on phones */
+    .hud-mode { top: 72px; right: 30px; }
+    .hud-read { left: 30px; bottom: 30px; gap: 10px; font-size: 10px; }
+    .hud-count { right: 30px; bottom: 58px; }
+    .hud-count b { font-size: 20px; }
+    .sec-title { font-size: clamp(34px, 10.2vw, 48px); flex-wrap: wrap; }
+    .features { grid-template-columns: 1fr; gap: 40px; }
+    .feat-media { aspect-ratio: 5 / 4; }
+    .tl::before, .tl-spine { left: 6px; }
+    .tl li { grid-template-columns: 1fr; padding-left: 30px; }
+    .tl-year { grid-column: 1; grid-row: 1; justify-self: start; padding: 0 0 10px; background: none; }
+    .tl-year::after { position: absolute; left: -29px; top: 0; margin: 0; }
+    .tl li:nth-child(odd) .tl-body, .tl li:nth-child(even) .tl-body { grid-column: 1; grid-row: 2; text-align: left; }
+    .tl li:nth-child(odd) .tl-note { margin-left: 0; }
+    [data-press="wall"] .tl { grid-template-columns: 1fr; }
+    [data-press="wall"] .tl li { padding-left: 0; }
+    .sheet { grid-template-columns: repeat(2, 1fr); }
+    .foot-grid { grid-template-columns: 1fr; }
+    .footer h2 { font-size: 8.4vw; }
+    .colophon { flex-direction: column; }
+  }
+
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+  /* ---------- MOCKUP ONLY: options panel ---------- */
+  .no-mock .mock { display: none !important; }
+  .mock { position: fixed; z-index: 99; right: 14px; bottom: 14px; width: min(600px, calc(100vw - 28px)); max-height: calc(100vh - 28px); overflow: auto; background: #fff; color: #111; font: 13px/1.35 system-ui, sans-serif; border: 2px solid #111; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .mock header { display: flex; justify-content: space-between; align-items: center; padding: 8px 10px; background: #111; color: #fff; font-weight: 700; }
+  .mock header button { all: unset; cursor: pointer; padding: 0 4px; }
+  .mock.min .mock-body { display: none; }
+  .mock-body { padding: 10px 14px 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; align-content: start; }
+  .mock-body > :not(label) { grid-column: 1 / -1; }
+  .mock label { display: block; margin: 6px 0 2px; font-weight: 600; }
+  .mock select { width: 100%; font: inherit; padding: 4px; }
+  .mock h4 { margin: 14px 0 4px; font-size: 13px; }
+  .mock .hint { margin: 0 0 6px; color: #555; font-size: 12px; }
+  .slots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .slots button, .pool button { all: unset; position: relative; display: block; cursor: pointer; aspect-ratio: 4 / 5; background: #ddd center / cover no-repeat; outline: 2px solid transparent; outline-offset: -2px; }
+  .slots button b { position: absolute; left: 0; top: 0; background: #111; color: #fff; font: 700 14px/1 system-ui; padding: 5px 8px; }
+  .slots button[aria-pressed="true"] { outline: 3px solid #d8f23c; box-shadow: 0 0 0 2px #111; }
+  .pool { display: none; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 8px; padding: 6px; background: #f1f1ee; border: 1px solid #ccc; }
+  .pool.open { display: grid; }
+  .pool button:hover { outline-color: #111; }
+  .pool button.cur { outline: 3px solid #d8f23c; }
+  .pool button.new::after { content: "new"; position: absolute; right: 0; bottom: 0; background: #d8f23c; color: #111; font: 700 12px/1 system-ui; padding: 4px 6px; }
+  .pool button.used { opacity: .45; }
+  .picks { margin-top: 8px; font: 13px/1.4 ui-monospace, Menlo, monospace; color: #333; word-break: break-word; }
+  .mock .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .mock .row2 button { margin-top: 8px; padding: 7px; font: 700 12px system-ui; background: #fff; border: 2px solid #111; cursor: pointer; }
+  .mock .replay { margin-top: 10px; width: 100%; padding: 8px; font: 700 13px system-ui; background: #d8f23c; border: 2px solid #111; cursor: pointer; }
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+
+<button class="menu-btn" aria-haspopup="dialog"><i></i>Menu</button>
+
+<header class="hero" id="top" aria-label="Kylan MacKenzie">
+  <img class="hero-photo studio" src="assets/photos/hero.jpg" alt="Kylan MacKenzie in a black tank and brown leather jacket, smiling, in a grey studio" data-fx=".5" data-fy=".15" data-fs=".2" fetchpriority="high">
+  <img class="hero-photo tea" src="assets/photos/hero-tea.jpg" alt="Kylan MacKenzie smiling over a cup of tea" data-fx=".42" data-fy=".33" data-fs=".2" loading="lazy">
+  <div class="burst" aria-hidden="true"><img alt=""></div>
+
+  <nav class="nav" aria-label="Sections">
+    <a class="mono-km" href="#top">KM</a>
+    <div class="nav-links"><a href="#work">Work</a><a href="#press">Press</a><a href="#photos">Photos</a><a href="#credits">Credits</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <h1 class="hero-name"><span class="first"><span class="w"><span>Kylan</span></span></span><span class="last"><span class="w"><span>MacKenzie</span></span></span></h1>
+
+  <div class="vf" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="af" aria-hidden="true"><span class="ring"></span></div>
+  <div class="hud hud-mode" aria-hidden="true">AF-S <span class="mode-state">&middot; Hunting</span></div>
+  <div class="hud hud-read" aria-hidden="true"><span class="dot"></span><span class="read">1/250&ensp;f2.8&ensp;ISO 400</span></div>
+  <div class="hud hud-count" aria-hidden="true"><b class="count">00</b><span>Credits</span></div>
+  <div class="flash" aria-hidden="true"></div>
+</header>
+
+<div class="rebate" aria-hidden="true"><span></span></div>
+
+<main>
+  <section class="sec work" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="work-title">Featured <em>work</em></h2>
+      <div class="features">
+        <a class="feat" href="https://www.imdb.com/name/nm13654822/" target="_blank" rel="noopener">
+          <div class="feat-media"><span class="feat-tag">Out now</span><img src="assets/photos/k-0-01.jpg" alt="Kylan on set of Playing Games in Paradise, leaning on a white Bronco under palm trees" loading="lazy"><span class="af2"></span></div>
+          <h3>Playing Games in Paradise</h3>
+          <p><em>Mason Crane</em> &middot; ReelShort &middot; 2026</p>
+        </a>
+        <a class="feat" href="https://www.imdb.com/name/nm13654822/" target="_blank" rel="noopener">
+          <div class="feat-media"><img src="assets/photos/k-1-03.jpg" alt="Kylan in a motorcycle helmet on a Royal Enfield at night, from I Fell for My Ex-Biker's Trap" loading="lazy" style="object-position: 50% 30%"><span class="af2"></span></div>
+          <h3>I Fell for My Ex-Biker&rsquo;s Trap</h3>
+          <p><em>Rowan</em> &middot; DramaShorts &middot; 2026</p>
+        </a>
+        <a class="feat" href="https://www.reelshort.com/fandom/kylan-mackenzie-01-6-1a2b555/" target="_blank" rel="noopener">
+          <div class="feat-media feat-stat"><b>60M+</b><span>views on ReelShort</span><small>&ldquo;Rich and hot boyfriend&rdquo; Dominick, as ReelShort put it</small><span class="af2"></span></div>
+          <h3>There&rsquo;s No Home for the Broken Hearted</h3>
+          <p><em>Dominick Blackwood</em> &middot; ReelShort &middot; 2025</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="rebate" aria-hidden="true"><span></span></div>
+
+  <section class="sec press light" id="press" aria-labelledby="press-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="press-title">In the <em>press</em></h2>
+      <div class="tl-wrap"><span class="tl-spine" aria-hidden="true"></span>
+      <ol class="tl">
+        <li><span class="tl-year">2017</span><div class="tl-body"><p class="tl-note">Wins awards in both acting and modelling at a talent convention in British Columbia.</p></div></li>
+        <li><span class="tl-year">2018</span><div class="tl-body"><p class="tl-note">Connects with Major Milan at Faces West in Vancouver and signs a three-year modelling deal.</p></div></li>
+        <li class="art"><span class="tl-year">2019</span><div class="tl-body">
+          <a class="clip" href="https://globalnews.ca/news/5153737/saskatoon-model-italy/" target="_blank" rel="noopener">
+            <span class="clip-out"><span>Global News</span><span>Apr 10, 2019</span></span>
+            <h3>Saskatoon teen signs with modelling agency in Italy</h3>
+            <blockquote>&ldquo;Oh my gosh, this guy is going somewhere.&rdquo;<cite>Mary Obrodovich, SHE Modelling</cite></blockquote>
+            <span class="go">Read on Global News &nearr;</span>
+          </a></div></li>
+        <li><span class="tl-year">2021</span><div class="tl-body"><p class="tl-note">First screen credit: John in the short film <i>The Red Pages</i>.</p></div></li>
+        <li><span class="tl-year">2024</span><div class="tl-body"><p class="tl-note">Books his first vertical dramas, starting with <i>Champion: She&rsquo;s Not the One</i>.</p></div></li>
+        <li class="art"><span class="tl-year">2025</span><div class="tl-body">
+          <a class="clip" href="https://www.reelshort.com/fandom/kylan-mackenzie-01-6-1a2b555/" target="_blank" rel="noopener">
+            <span class="clip-out"><span>ReelShort Fandom</span><span>Sep 19, 2025</span></span>
+            <h3>Limelight on Kylan Mackenzie: the heartthrob actor chasing big dreams in Hollywood</h3>
+            <p>On Dominick Blackwood in <i>There&rsquo;s No Home for the Broken Hearted</i>, a family drama past 60 million views.</p>
+            <span class="go">Read on ReelShort &nearr;</span>
+          </a></div></li>
+        <li class="art"><span class="tl-year">Jan 2026</span><div class="tl-body">
+          <a class="clip" href="https://newimage.ca/2026/01/kylan-mackenzie-acting-in-vertical-production/" target="_blank" rel="noopener">
+            <span class="clip-out"><span>New Image College</span><span>Jan 5, 2026</span></span>
+            <h3>Kylan Mackenzie &ndash; Acting in vertical production</h3>
+            <p>On set for <i>Love Burns on Ice</i> as the heir of a rich family: cold, manipulative, jealous. Ten-plus vertical productions in.</p>
+            <span class="go">Read on New Image &nearr;</span>
+          </a></div></li>
+        <li class="art"><span class="tl-year">Jul 2026</span><div class="tl-body">
+          <a class="clip video" href="https://www.youtube.com/watch?v=ngTcVkIBfOE" target="_blank" rel="noopener">
+            <span class="clip-out"><span>Talented Universe &middot; Live</span><span>Jul 30, 2026 &middot; 48 min</span></span>
+            <h3>Kylan MacKenzie joins Michael Day live</h3>
+            <p>A long-form live conversation about acting in vertical production, out of Vancouver.</p>
+            <span class="go">Watch on YouTube &nearr;</span>
+          </a></div></li>
+        <li><span class="tl-year">Oct 2026</span><div class="tl-body"><p class="tl-note"><i>Playing Games in Paradise</i> premieres on ReelShort, with Kylan as Mason Crane.</p></div></li>
+      </ol></div>
+    </div>
+  </section>
+
+  <div class="rebate" aria-hidden="true"><span></span></div>
+
+  <section class="sec photos" id="photos" aria-labelledby="photos-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="photos-title">Photos</h2>
+      <div class="sheet"></div>
+    </div>
+  </section>
+
+  <section class="sec credits-sec light" id="credits" aria-labelledby="credits-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="credits-title">Credits</h2>
+      <div class="credits">
+        <div class="credit-keep"><h3>Vertical drama <small>25</small></h3><div class="credit"><span class="credit-title">Playing Games in Paradise</span><span class="credit-role">Mason Crane</span><span class="credit-year">2026</span></div></div>
+        <div class="credit"><span class="credit-title">I Fell for My Ex-Biker&rsquo;s Trap</span><span class="credit-role">Rowan</span><span class="credit-year">2026</span></div>
+        <div class="credit"><span class="credit-title">Snow White in the City</span><span class="credit-role">Peter Dan</span><span class="credit-year">2026</span></div>
+        <div class="credit"><span class="credit-title">Love Reset Game</span><span class="credit-role">Carl Rowan</span><span class="credit-year">2026</span></div>
+        <div class="credit"><span class="credit-title">Tempted by the Wrong Brother</span><span class="credit-role">Chris Lehmann</span><span class="credit-year">2026</span></div>
+        <div class="credit"><span class="credit-title">Love Burns on Ice</span><span class="credit-role">Damien</span><span class="credit-year">2026</span></div>
+        <div class="credit"><span class="credit-title">The Secret She Raised</span><span class="credit-role">Jacob Lewis</span><span class="credit-year">2026</span></div>
+        <div class="credit"><span class="credit-title">If I Never Loved You</span><span class="credit-role">Nolan</span><span class="credit-year">2026</span></div>
+        <div class="credit"><span class="credit-title">Mafia Princess Kicks Ass on Christmas</span><span class="credit-role">Noah</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">Please Seduce My Husband</span><span class="credit-role">James Danforth</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">Mafia Boss Owns My Body</span><span class="credit-role">Daniel</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">The Alpha King&rsquo;s True Luna</span><span class="credit-role">Tanner</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">You Called My Mom a Mistress</span><span class="credit-role">Robert</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">There&rsquo;s No Home for the Broken Hearted</span><span class="credit-role">Dominick Blackwood</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">Mated to My Brother-in-Law Alpha</span><span class="credit-role">Logan Blackwood</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">Second Chance with Mafia Lover</span><span class="credit-role">Caleb</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">The Billionaire Heiress&rsquo;s Ex-Ectomy</span><span class="credit-role">James Thompson</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">Finally See You Carrying Our Baby</span><span class="credit-role">Eric</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">Sleeping Beauty and Three Brothers</span><span class="credit-role">Researcher</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">Breaking Chains for a New Life</span><span class="credit-role">Eric Walker</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">Love After Layoffs</span><span class="credit-role">Duke</span><span class="credit-year">2025</span></div>
+        <div class="credit"><span class="credit-title">You Are My One &amp; Only</span><span class="credit-role">Sebastian Walker</span><span class="credit-year">2024</span></div>
+        <div class="credit"><span class="credit-title">Lost Heiress: A Whirlwind Romance with Him</span><span class="credit-role">Webster</span><span class="credit-year">2024</span></div>
+        <div class="credit"><span class="credit-title">Divorce a Billionaire to Marry Him!</span><span class="credit-role">Alex</span><span class="credit-year">2024</span></div>
+        <div class="credit"><span class="credit-title">Champion: She&rsquo;s Not the One</span><span class="credit-role">Michael Claflin</span><span class="credit-year">2024</span></div>
+        <div class="credit-keep"><h3>Series <small>1</small></h3><div class="credit"><span class="credit-title">Love Beyond Sight</span><span class="credit-role">Luke Pemberton</span><span class="credit-year">2026</span></div></div>
+        <div class="credit-keep"><h3>Film <small>1</small></h3><div class="credit"><span class="credit-title">Bravery</span><span class="credit-role">Cast &middot; in post-production</span><span class="credit-year">Soon</span></div></div>
+        <div class="credit-keep"><h3>Television <small>1</small></h3><div class="credit"><span class="credit-title">Hitler&rsquo;s Last Stand</span><span class="credit-role">Reenactor &middot; 1 episode</span><span class="credit-year">2022</span></div></div>
+        <div class="credit-keep"><h3>Short film <small>1</small></h3><div class="credit"><span class="credit-title">The Red Pages</span><span class="credit-role">John</span><span class="credit-year">2021</span></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="rebate" aria-hidden="true"><span></span></div>
+
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <h2>Casting &amp; <em>bookings</em></h2>
+    <div class="foot-grid">
+      <div>
+        <h3>Get in touch</h3>
+        <a class="btn" href="https://ig.me/m/kylanjmackenzie" target="_blank" rel="noopener">Message on Instagram &rarr;</a>
+        <p class="lead-note">Booking and press enquiries by direct message: @kylanjmackenzie.</p>
+      </div>
+      <div>
+        <h3>At a glance</h3>
+        <dl class="stats">
+          <dt>Based</dt><dd>Vancouver, BC</dd>
+          <dt>Height</dt><dd>6&prime;2&Prime; &middot; 188 cm</dd>
+          <dt>Eyes</dt><dd>Green</dd>
+          <dt>Hair</dt><dd>Brown</dd>
+          <dt>Trained</dt><dd>New Image College</dd>
+        </dl>
+      </div>
+      <div>
+        <h3>Find him</h3>
+        <ul>
+          <li><a href="https://www.imdb.com/name/nm13654822/" target="_blank" rel="noopener">IMDb</a></li>
+          <li><a href="https://www.instagram.com/kylanjmackenzie/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon"><span>&copy; 2026 Kylan MacKenzie</span><span>Vancouver &middot; Milan &middot; Saskatoon</span></div>
+  </div>
+</footer>
+
+<dialog class="menu-over" aria-label="Menu">
+  <button class="menu-close" aria-label="Close menu">&times;</button>
+  <a href="#work"><span>01</span>Work</a><a href="#press"><span>02</span>Press</a><a href="#photos"><span>03</span>Photos</a><a href="#credits"><span>04</span>Credits</a><a href="#contact"><span>05</span>Contact</a>
+</dialog>
+
+<dialog class="lightbox" aria-label="Photo viewer">
+  <img alt="">
+  <button class="prev" aria-label="Previous photo">&larr;</button>
+  <button class="next" aria-label="Next photo">&rarr;</button>
+  <button class="close" aria-label="Close">&times;</button>
+</dialog>
+
+<!-- MOCKUP ONLY -->
+<aside class="mock" aria-label="Design options">
+  <header><span>Options &middot; Kylan v1</span><button class="mock-min" aria-label="Minimise">&minus;</button></header>
+  <div class="mock-body">
+    <label>Hero photo<select data-opt="hero"><option value="studio">A Studio, leather jacket</option><option value="tea">B Tea, smiling</option></select></label>
+    <label>On load<select data-opt="wow"><option value="burst">A Shutter burst + focus lock</option><option value="focus">B Focus lock only</option><option value="plain">C Plain fade</option></select></label>
+    <label>Viewfinder after load<select data-opt="hud"><option value="stay">A Corners stay (faint)</option><option value="fade">B Fade away</option></select></label>
+    <label>Accent<select data-opt="accent"><option value="lime">A Focus lime</option><option value="cognac">B Leather cognac</option><option value="mono">C Mono white</option></select></label>
+    <label>Press<select data-opt="press"><option value="timeline">A Timeline (story so far)</option><option value="wall">B Headline wall</option></select></label>
+    <label>Photos<select data-opt="photos"><option value="sheet">A Contact sheet + marker</option><option value="grid">B Plain grid</option></select></label>
+    <label>Name: the y&rsquo;s tail<select data-opt="tail"><option value="behind">A Runs behind MACKENZIE</option><option value="apart">B Names spaced apart</option></select></label>
+    <label>Seams<select data-opt="seams"><option value="rebate">A Film rebate</option><option value="plain">B Plain</option></select></label>
+    <h4>Opening burst &middot; 8 frames</h4>
+    <p class="hint">Click a frame, then pick its replacement below.</p>
+    <div class="slots"></div>
+    <div class="pool"></div>
+    <div class="picks"></div>
+    <div class="row2"><button class="slow">Replay in slow-mo</button><button class="reset-burst">Reset frames</button></div>
+    <button class="replay">Replay hero</button>
+  </div>
+</aside>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const $ = (s, c = document) => c.querySelector(s), $$ = (s, c = document) => [...c.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+
+  /* ---------- Photos: contact sheet ---------- */
+  const photos = [
+    ['k-1-01', 'Back to camera in a leather bomber, studio'],
+    ['k-4-01', 'Laughing over a cup of tea'],
+    ['k-2-00', 'Arms crossed against a palm on the beach'],
+    ['k-1-04', 'Low light, olive shirt, on set'],
+    ['k-3-00', 'On the summit of Overseer Mountain'],
+    ['k-1-08', 'Helmet on, on the motorcycle in the studio'],
+    ['k-4-02', 'Over a cup of tea, looking up'],
+    ['k-0-11', 'Silhouette at sunset, Cayman Islands'],
+    ['k-2-02', 'Walking up the beach in white linen'],
+    ['k-1-02', 'Headlight on, night ride'],
+    ['k-3-07', 'At the trailhead in the pines'],
+    ['k-0-10', 'Sunset on the beach, Cayman Islands'],
+  ];
+  const selects = { 2: 'loop', 4: 'tick', 9: 'loop' };   // grease-pencil marks: the "keepers"
+  const loop = 'M52 6 C 82 3, 99 14, 98 46 C 97 80, 88 99, 50 98 C 14 97, 2 84, 3 50 C 4 20, 18 6, 56 4 L 62 8';
+  const tick = 'M70 92 L 80 100 L 98 80';
+  const sheet = $('.sheet');
+  photos.forEach(([f, alt], i) => {
+    const b = document.createElement('button'); b.className = 'frame'; b.dataset.i = i;
+    b.setAttribute('aria-label', 'Open photo: ' + alt);
+    const n = 14 + i;
+    b.innerHTML = `<img src="assets/photos/${f}.jpg" alt="${alt}" loading="lazy"><span class="no"><span>${n}</span><span>&#9656; ${n}A</span></span>`;
+    if (selects[i]) {
+      const s = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      s.setAttribute('viewBox', '0 0 100 100'); s.setAttribute('preserveAspectRatio', 'none'); s.setAttribute('aria-hidden', 'true');
+      s.innerHTML = selects[i] === 'loop' ? `<path d="${loop}"/>` : `<path d="${loop}"/><path class="tick" d="${tick}"/>`;
+      b.append(s);
+    }
+    sheet.append(b);
+  });
+  $$('.frame svg path').forEach(p => p.style.setProperty('--len', Math.ceil(p.getTotalLength() * 6) + 'px'));
+
+  /* lightbox */
+  const lb = $('.lightbox'), lbImg = $('img', lb); let cur = 0;
+  const show = i => { cur = (i + photos.length) % photos.length; lbImg.src = `assets/photos/${photos[cur][0]}.jpg`; lbImg.alt = photos[cur][1]; };
+  sheet.addEventListener('click', e => { const f = e.target.closest('.frame'); if (!f) return; show(+f.dataset.i); lb.showModal(); });
+  $('.prev', lb).onclick = () => show(cur - 1); $('.next', lb).onclick = () => show(cur + 1); $('.close', lb).onclick = () => lb.close();
+  lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+  addEventListener('keydown', e => { if (!lb.open) return; if (e.key === 'ArrowLeft') show(cur - 1); if (e.key === 'ArrowRight') show(cur + 1); });
+
+  /* ---------- Menu button (nav option D) ---------- */
+  const menu = $('.menu-over');
+  $('.menu-btn').onclick = () => menu.showModal();
+  $('.menu-close').onclick = () => menu.close();
+  $$('a', menu).forEach(a => a.addEventListener('click', () => menu.close()));
+
+  /* ---------- Film rebate seams: frame numbers across the width ---------- */
+  let seamN = 3;
+  $$('.rebate span').forEach(s => {
+    let t = ''; for (let k = 0; k < 40; k++) { const n = seamN + k; t += `&#9656; ${n}&emsp;&emsp;&emsp;${n}A&emsp;&emsp;&emsp;KM&ensp;400&emsp;&emsp;&emsp;`; }
+    s.innerHTML = t; s.style.left = (-((seamN * 37) % 160)) + 'px'; seamN += 11;
+  });
+
+  /* ---------- Credits: balanced columns ---------- */
+  const credits = $('.credits'), rows = [...credits.children];
+  const colCount = () => { const w = credits.parentElement.clientWidth; return w > 980 ? 3 : w > 620 ? 2 : 1; };
+  function layoutCredits() {
+    const n = colCount(); credits.style.setProperty('--cols', n);
+    const cols = Array.from({ length: n }, () => { const d = document.createElement('div'); d.className = 'credit-col'; return d; });
+    cols[0].append(...rows); credits.replaceChildren(...cols);
+    if (n === 1) return;
+    const h = rows.map(r => r.offsetHeight), sum = (a, b) => h.slice(a, b).reduce((x, y) => x + y, 0);
+    const penalty = i => rows[i].classList.contains('credit-keep') ? 0 : 40;
+    const cuts = n === 2 ? rows.map((_, i) => [i]).slice(1) : rows.flatMap((_, i) => rows.map((_, j) => [i, j])).filter(([i, j]) => i > 0 && j > i);
+    let best = null;
+    for (const c of cuts) { const e = [0, ...c, rows.length]; const s = Math.max(...e.slice(1).map((x, k) => sum(e[k], x))) + c.reduce((t, i) => t + penalty(i), 0); if (!best || s < best.s) best = { s, c }; }
+    const e = [0, ...best.c, rows.length]; cols.forEach((col, k) => col.replaceChildren(...rows.slice(e[k], e[k + 1])));
+  }
+  layoutCredits(); let lastCols = colCount();
+  addEventListener('resize', () => { if (colCount() !== lastCols) { lastCols = colCount(); layoutCredits(); } });
+  document.fonts.ready.then(layoutCredits);
+  const creditTotal = $$('.credit').length;
+
+  /* ---------- Scroll: reveal timeline, draw spine, mark the sheet, dark root at the end ---------- */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .25 });
+  $$('.tl li').forEach(li => io.observe(li)); io.observe(sheet);
+  const tl = $('.tl'), spine = $('.tl-spine');
+  const onScroll = () => {
+    const r = tl.getBoundingClientRect(), H = window.innerHeight;
+    const p = Math.min(1, Math.max(0, (H * .7 - r.top) / r.height));
+    spine.style.height = (p * (r.height - 12)) + 'px';
+    root.classList.toggle('at-end', scrollY > (document.documentElement.scrollHeight - H) / 2);
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  /* ---------- Hero: shutter burst, focus hunt, lock, flash ---------- */
+  const hero = $('.hero'), af = $('.af'), ring = $('.ring', af), flash = $('.flash'), burst = $('.burst'), bImg = $('img', burst);
+  const read = $('.read'), count = $('.count'), modeState = $('.mode-state');
+  const photo = () => $(root.dataset.hero === 'tea' ? '.hero-photo.tea' : '.hero-photo.studio');
+  const BURST_DEFAULT = ['k-1-01', 'k-2-02', 'k-1-08', 'k-0-01', 'k-3-00', 'k-1-04', 'k-1-07', 'k-4-01'];
+  // per-photo vertical framing in the burst (object-position y); everything else sits at 22%
+  const BURST_Y = { 'k-1-01': '0%', 'k-2-02': '50%', 'k-0-01': '54%', 'k-4-01': '45%' };
+  let burstFrames = BURST_DEFAULT.slice(), frameMs = 115;
+  const preloadAll = () => Promise.all(burstFrames.map(f => new Promise(r => { const i = new Image(); i.onload = i.onerror = r; i.src = `assets/photos/${f}.jpg`; })));
+  let preload = preloadAll();
+  const SCR = '0123456789/#%<>=+';
+  function scramble(el, text, ms) {
+    const t0 = performance.now();
+    return new Promise(res => { const step = now => { const p = Math.min(1, (now - t0) / ms); const keep = Math.floor(text.length * p);
+      el.textContent = text.slice(0, keep) + [...text.slice(keep)].map(c => c === ' ' ? ' ' : SCR[Math.random() * SCR.length | 0]).join('');
+      if (p < 1) requestAnimationFrame(step); else { el.textContent = text; res(); } }; requestAnimationFrame(step); });
+  }
+  function countTo(n, ms) { const t0 = performance.now(); const step = now => { const p = Math.min(1, (now - t0) / ms);
+    count.textContent = String(Math.round(n * (1 - Math.pow(1 - p, 3)))).padStart(2, '0'); if (p < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); }
+  function faceBox() {   // the face's rect inside the hero, from the photo's rendered box (object-fit: cover)
+    const img = photo(), hr = hero.getBoundingClientRect(), r = img.getBoundingClientRect();
+    const nw = img.naturalWidth || 900, nh = img.naturalHeight || 1150, s = Math.max(r.width / nw, r.height / nh);
+    const dw = nw * s, dh = nh * s, ox = (r.width - dw) / 2, oy = (r.height - dh) / 2;
+    const size = Math.max(84, dw * +img.dataset.fs);
+    return { x: r.left - hr.left + ox + dw * +img.dataset.fx - size / 2, y: r.top - hr.top + oy + dh * +img.dataset.fy - size / 2, size };
+  }
+  const place = (x, y, size) => { af.style.width = af.style.height = size + 'px'; af.style.transform = `translate(${x}px, ${y}px)`; };
+  let run = 0;
+  async function play() {
+    const id = ++run, alive = () => id === run;
+    hero.className = 'hero'; af.className = 'af'; af.style.transition = 'none'; af.style.opacity = 0; ring.style.cssText = ''; flash.style.cssText = '';
+    burst.style.opacity = 0; modeState.textContent = '· Hunting'; read.textContent = '1/250  f2.8  ISO 400'; count.textContent = '00';
+    const mode = root.dataset.wow;
+    if (reduce || mode === 'plain') { read.textContent = '6′2″  ·  Green eyes  ·  Vancouver, BC'; modeState.textContent = '· Locked'; count.textContent = String(creditTotal);
+      hero.classList.add('done'); root.classList.add('hero-ready'); return; }
+    hero.classList.add('prelock');
+    await Promise.all([photo().decode().catch(() => {}), document.fonts.ready]);
+    if (!alive()) return;
+    if (mode === 'burst') {
+      await Promise.race([preload, wait(1400)]); if (!alive()) return;
+      hero.classList.add('hunting'); burst.style.opacity = 1;
+      countTo(creditTotal, 1900);
+      for (const f of burstFrames) { burst.classList.add('blink'); await wait(45); bImg.src = `assets/photos/${f}.jpg`; bImg.style.objectPosition = '50% ' + (BURST_Y[f] || '22%'); burst.classList.remove('blink'); await wait(frameMs); if (!alive()) return; }
+      burst.classList.add('blink'); await wait(60); burst.style.opacity = 0; burst.classList.remove('blink');
+      hero.classList.remove('hunting'); void hero.offsetWidth;
+    } else countTo(creditTotal, 1500);
+    if (!alive()) return;
+    hero.classList.remove('prelock'); hero.classList.add('hunting');
+    // the AF box hunts around the frame, then snaps onto the face
+    const f = faceBox(), hr = hero.getBoundingClientRect();
+    const hops = [[.3, .55, 1.6], [.7, .35, 1.3], [.45, .25, 1.15]];
+    af.style.opacity = 1;
+    for (const [hx, hy, k] of hops) {
+      place(hr.width * hx - f.size * k / 2, hr.height * hy - f.size * k / 2, f.size * k);
+      await wait(16); af.style.transition = 'transform .28s cubic-bezier(.3,.7,.2,1), width .28s, height .28s'; await wait(300); if (!alive()) return;
+    }
+    place(f.x, f.y, f.size); await wait(320); if (!alive()) return;
+    af.classList.add('lock'); modeState.textContent = '· Locked';
+    ring.animate([{ opacity: .9, transform: 'scale(1)' }, { opacity: 0, transform: 'scale(1.35)' }], { duration: 520, easing: 'ease-out' });
+    af.animate([{ opacity: 1 }, { opacity: .2 }, { opacity: 1 }, { opacity: .2 }, { opacity: 1 }], { duration: 360 });
+    await wait(380); if (!alive()) return;
+    // flash
+    flash.animate([{ opacity: .95 }, { opacity: 0 }], { duration: 650, easing: 'cubic-bezier(.2,.8,.3,1)' });
+    hero.classList.remove('hunting'); hero.classList.add('flashed', 'done'); root.classList.add('hero-ready');
+    af.style.transition = 'opacity 1.2s .9s'; af.style.opacity = 0;
+    await wait(500); if (!alive()) return;
+    scramble(read, '6′2″  ·  Green eyes  ·  Vancouver, BC', 900);
+  }
+  addEventListener('resize', () => { if (af.classList.contains('lock')) { const f = faceBox(); af.style.transition = 'none'; place(f.x, f.y, f.size); } });
+  play();
+
+  /* ---------- MOCKUP ONLY: options panel ---------- */
+  const mock = $('.mock'); if (root.classList.contains('no-mock')) return;
+  const KEY = 'kylan-opts-v1'; let saved = {}; try { saved = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
+  const url = new URLSearchParams(location.search);
+  $$('.mock select').forEach(sel => {
+    const k = sel.dataset.opt; const v = url.get(k) || saved[k] || root.dataset[k];
+    if ([...sel.options].some(o => o.value === v)) { sel.value = v; root.dataset[k] = v; }
+    sel.addEventListener('change', () => {
+      root.dataset[k] = sel.value; saved[k] = sel.value; try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+      if (['hero', 'wow'].includes(k)) play();
+      document.fonts.ready.then(() => { lastCols = colCount(); layoutCredits(); onScroll(); });
+    });
+  });
+  $('.replay').onclick = () => { frameMs = 115; scrollTo({ top: 0 }); play(); };
+
+  // Opening burst: 8 slots, each swappable from the pool (new = not used anywhere else on the page)
+  const POOL = [
+    ['k-1-01', 'Studio, back turned'], ['k-4-02', 'Tea, looking up'], ['k-2-00', 'Beach, arms crossed'], ['k-1-08', 'Helmet, studio bike'],
+    ['k-3-00', 'Summit'], ['k-1-04', 'Low light, olive shirt'], ['k-0-11', 'Sunset silhouette'], ['k-4-01', 'Tea, laughing'],
+    ['k-1-02', 'Headlight, night ride'], ['k-1-03', 'Helmet, Royal Enfield'], ['k-2-02', 'Beach walk'], ['k-3-07', 'Trailhead'],
+    ['k-0-10', 'Sunset, beach'], ['k-0-01', 'Bronco, Paradise set'],
+    ['k-1-00', 'Studio, leather jacket (hero)', 1], ['k-4-00', 'Tea, smiling (hero B)', 1], ['k-2-01', 'Beach, looking away', 1],
+    ['k-1-05', 'With co-star, Ex-Biker set', 1], ['k-1-06', 'On the bike, with director', 1], ['k-1-07', 'Handshake on set', 1],
+    ['k-0-05', 'On the monitor, Paradise', 1], ['k-0-04', 'Office scene, Paradise', 1], ['k-0-06', 'Peace sign, Paradise set', 1],
+    ['k-0-07', 'Car selfie with the cast', 1], ['k-0-09', 'Villa, with a friend', 1], ['k-0-00', 'Tennis court scene', 1],
+    ['k-0-02', 'Beach crew, from behind', 1], ['k-3-04', 'Glacier crossing', 1],
+  ];
+  const BKEY = 'kylan-burst-v2'; let slot = -1;
+  try { const b = (url.get('burst') || '').split(',').filter(Boolean).map(x => 'k-' + x); const st = JSON.parse(localStorage.getItem(BKEY) || 'null');
+    const pick = b.length === 8 ? b : st; if (pick && pick.length === 8) burstFrames = pick; } catch (e) {}
+  const slotsEl = $('.slots'), poolEl = $('.pool'), picksEl = $('.picks');
+  const thumb = f => `url(assets/photos/${f}.jpg)`;
+  function drawBurst() {
+    slotsEl.innerHTML = ''; burstFrames.forEach((f, i) => { const b = document.createElement('button'); b.style.backgroundImage = thumb(f);
+      b.title = (POOL.find(p => p[0] === f) || [, f])[1]; b.innerHTML = `<b>${i + 1}</b>`; b.setAttribute('aria-pressed', i === slot);
+      b.onclick = () => { slot = slot === i ? -1 : i; drawBurst(); }; slotsEl.append(b); });
+    poolEl.classList.toggle('open', slot >= 0); poolEl.innerHTML = '';
+    POOL.forEach(([f, label, isNew]) => { const b = document.createElement('button'); b.style.backgroundImage = thumb(f); b.title = label;
+      b.className = (isNew ? 'new ' : '') + (slot >= 0 && burstFrames[slot] === f ? 'cur ' : burstFrames.includes(f) ? 'used' : '');
+      b.onclick = () => { burstFrames[slot] = f; try { localStorage.setItem(BKEY, JSON.stringify(burstFrames)); } catch (e) {} preload = preloadAll(); slot = -1; drawBurst(); };
+      poolEl.append(b); });
+    picksEl.textContent = 'Picks: ' + burstFrames.map(f => f.slice(2)).join(', ');
+  }
+  drawBurst(); preload = preloadAll();
+  $('.slow').onclick = () => { frameMs = 750; root.dataset.wow = 'burst'; $('select[data-opt="wow"]').value = 'burst'; scrollTo({ top: 0 }); play(); };
+  $('.reset-burst').onclick = () => { burstFrames = BURST_DEFAULT.slice(); try { localStorage.removeItem(BKEY); } catch (e) {} preload = preloadAll(); slot = -1; drawBurst(); };
+  $('.mock-min').onclick = () => mock.classList.toggle('min');
+  play();
+})();
+</script>
+</body>
+</html>
