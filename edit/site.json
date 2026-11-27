@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "slots": [
+    {
+      "id": "hero",
+      "label": "Hero photo",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [],
+      "captions": []
+    },
+    {
+      "id": "feat-1",
+      "label": "Featured poster 1",
+      "kind": "poster",
+      "orientation": "portrait",
+      "variants": [],
+      "captions": [
+        {
+          "id": "title",
+          "label": "Title",
+          "max": 120
+        },
+        {
+          "id": "role",
+          "label": "Character",
+          "max": 80
+        }
+      ]
+    },
+    {
+      "id": "feat-2",
+      "label": "Featured poster 2",
+      "kind": "poster",
+      "orientation": "portrait",
+      "variants": [],
+      "captions": [
+        {
+          "id": "title",
+          "label": "Title",
+          "max": 120
+        },
+        {
+          "id": "role",
+          "label": "Character",
+          "max": 80
+        }
+      ]
+    },
+    {
+      "id": "feat-3",
+      "label": "Featured poster 3",
+      "kind": "poster",
+      "orientation": "portrait",
+      "variants": [],
+      "captions": [
+        {
+          "id": "title",
+          "label": "Title",
+          "max": 120
+        },
+        {
+          "id": "role",
+          "label": "Character",
+          "max": 80
+        }
+      ]
+    },
+    {
+      "id": "photo-1",
+      "label": "Contact sheet photo 1",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-2",
+      "label": "Contact sheet photo 2",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-3",
+      "label": "Contact sheet photo 3",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-4",
+      "label": "Contact sheet photo 4",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-5",
+      "label": "Contact sheet photo 5",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-6",
+      "label": "Contact sheet photo 6",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-7",
+      "label": "Contact sheet photo 7",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-8",
+      "label": "Contact sheet photo 8",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-9",
+      "label": "Contact sheet photo 9",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-10",
+      "label": "Contact sheet photo 10",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-11",
+      "label": "Contact sheet photo 11",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    },
+    {
+      "id": "photo-12",
+      "label": "Contact sheet photo 12",
+      "kind": "image",
+      "orientation": "portrait",
+      "variants": [
+        800
+      ],
+      "captions": []
+    }
+  ],
+  "credits": {
+    "fields": [
+      {
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "id": "role",
+        "label": "Role"
+      },
+      {
+        "id": "year",
+        "label": "Year"
+      }
+    ],
+    "heading": "<h3>{heading} <small>{count}</small></h3>",
+    "row": "<div class=\"credit\"><span class=\"credit-title\">{title}</span><span class=\"credit-role\">{role}</span><span class=\"credit-year\">{year}</span></div>",
+    "group": "<div class=\"credit-keep\">{heading}{first}</div>{rest}",
+    "columns": null,
+    "column": null,
+    "joiner": "\n        "
+  }
+}

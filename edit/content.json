@@ -1,0 +1,422 @@
+{
+  "version": 1,
+  "slots": {
+    "hero": {
+      "src": "assets/photos/k-1-01.webp",
+      "srcset": [],
+      "alt": "Kylan MacKenzie, portrait",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "feat-1": {
+      "src": "assets/featured/playing-games.jpg",
+      "srcset": [],
+      "alt": "Poster for Playing Games in Paradise",
+      "poster": null,
+      "captions": {
+        "title": "Playing Games in Paradise",
+        "role": "Mason Crane"
+      },
+      "link": "https://www.imdb.com/title/tt50162636/"
+    },
+    "feat-2": {
+      "src": "assets/featured/ex-biker.webp",
+      "srcset": [],
+      "alt": "Poster for I Fell for My Ex-Biker’s Trap",
+      "poster": null,
+      "captions": {
+        "title": "I Fell for My Ex-Biker’s Trap",
+        "role": "Rowan"
+      },
+      "link": "https://www.imdb.com/title/tt45399087/"
+    },
+    "feat-3": {
+      "src": "assets/featured/no-home.webp",
+      "srcset": [],
+      "alt": "Poster for There’s No Home for the Broken Hearted",
+      "poster": null,
+      "captions": {
+        "title": "There’s No Home for the Broken Hearted",
+        "role": "Dominick Blackwood"
+      },
+      "link": "https://www.imdb.com/title/tt38058638/"
+    },
+    "photo-1": {
+      "src": "assets/photos/k-1-05-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-1-05-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-1-05.webp",
+          1088
+        ]
+      ],
+      "alt": "On set of I Fell for My Ex-Biker’s Trap, with his co-star",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-2": {
+      "src": "assets/photos/k-4-01-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-4-01-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-4-01.webp",
+          1600
+        ]
+      ],
+      "alt": "Laughing over a cup of tea",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-3": {
+      "src": "assets/photos/k-2-00-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-2-00-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-2-00.webp",
+          1600
+        ]
+      ],
+      "alt": "Arms crossed against a palm on the beach",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-4": {
+      "src": "assets/photos/k-1-04-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-1-04-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-1-04.webp",
+          1088
+        ]
+      ],
+      "alt": "Low light, olive shirt, on set",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-5": {
+      "src": "assets/photos/k-3-00-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-3-00-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-3-00.webp",
+          1600
+        ]
+      ],
+      "alt": "On the summit of Overseer Mountain",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-6": {
+      "src": "assets/photos/k-1-08-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-1-08-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-1-08.webp",
+          1088
+        ]
+      ],
+      "alt": "Helmet on, on the motorcycle in the studio",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-7": {
+      "src": "assets/photos/k-4-02-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-4-02-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-4-02.webp",
+          1600
+        ]
+      ],
+      "alt": "Over a cup of tea, looking up",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-8": {
+      "src": "assets/photos/k-1-00-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-1-00-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-1-00.webp",
+          1088
+        ]
+      ],
+      "alt": "Studio portrait, leather jacket off one shoulder",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-9": {
+      "src": "assets/photos/k-2-02-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-2-02-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-2-02.webp",
+          1600
+        ]
+      ],
+      "alt": "Walking up the beach in white linen",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-10": {
+      "src": "assets/photos/k-1-02-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-1-02-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-1-02.webp",
+          1600
+        ]
+      ],
+      "alt": "Headlight on, night ride",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-11": {
+      "src": "assets/photos/k-0-05-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-0-05-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-0-05.webp",
+          1600
+        ]
+      ],
+      "alt": "On set, framed in the camera monitor",
+      "poster": null,
+      "captions": {},
+      "link": null
+    },
+    "photo-12": {
+      "src": "assets/photos/k-0-10-800.webp",
+      "srcset": [
+        [
+          "assets/photos/k-0-10-800.webp",
+          800
+        ],
+        [
+          "assets/photos/k-0-10.webp",
+          1536
+        ]
+      ],
+      "alt": "Sunset on the beach, Cayman Islands",
+      "poster": null,
+      "captions": {},
+      "link": null
+    }
+  },
+  "credits": [
+    {
+      "heading": "Vertical drama",
+      "rows": [
+        {
+          "title": "Playing Games in Paradise",
+          "role": "Mason Crane",
+          "year": "2026"
+        },
+        {
+          "title": "I Fell for My Ex-Biker’s Trap",
+          "role": "Rowan",
+          "year": "2026"
+        },
+        {
+          "title": "Snow White in the City",
+          "role": "Peter Dan",
+          "year": "2026"
+        },
+        {
+          "title": "Love Reset Game",
+          "role": "Carl Rowan",
+          "year": "2026"
+        },
+        {
+          "title": "Tempted by the Wrong Brother",
+          "role": "Chris Lehmann",
+          "year": "2026"
+        },
+        {
+          "title": "Love Burns on Ice",
+          "role": "Damien",
+          "year": "2026"
+        },
+        {
+          "title": "The Secret She Raised",
+          "role": "Jacob Lewis",
+          "year": "2026"
+        },
+        {
+          "title": "If I Never Loved You",
+          "role": "Nolan",
+          "year": "2026"
+        },
+        {
+          "title": "Mafia Princess Kicks Ass on Christmas",
+          "role": "Noah",
+          "year": "2025"
+        },
+        {
+          "title": "Please Seduce My Husband",
+          "role": "James Danforth",
+          "year": "2025"
+        },
+        {
+          "title": "Mafia Boss Owns My Body",
+          "role": "Daniel",
+          "year": "2025"
+        },
+        {
+          "title": "The Alpha King’s True Luna",
+          "role": "Tanner",
+          "year": "2025"
+        },
+        {
+          "title": "You Called My Mom a Mistress",
+          "role": "Robert",
+          "year": "2025"
+        },
+        {
+          "title": "There’s No Home for the Broken Hearted",
+          "role": "Dominick Blackwood",
+          "year": "2025"
+        },
+        {
+          "title": "Mated to My Brother-in-Law Alpha",
+          "role": "Logan Blackwood",
+          "year": "2025"
+        },
+        {
+          "title": "Second Chance with Mafia Lover",
+          "role": "Caleb",
+          "year": "2025"
+        },
+        {
+          "title": "The Billionaire Heiress’s Ex-Ectomy",
+          "role": "James Thompson",
+          "year": "2025"
+        },
+        {
+          "title": "Finally See You Carrying Our Baby",
+          "role": "Eric",
+          "year": "2025"
+        },
+        {
+          "title": "Sleeping Beauty and Three Brothers",
+          "role": "Researcher",
+          "year": "2025"
+        },
+        {
+          "title": "Breaking Chains for a New Life",
+          "role": "Eric Walker",
+          "year": "2025"
+        },
+        {
+          "title": "Love After Layoffs",
+          "role": "Duke",
+          "year": "2025"
+        },
+        {
+          "title": "You Are My One & Only",
+          "role": "Sebastian Walker",
+          "year": "2024"
+        },
+        {
+          "title": "Lost Heiress: A Whirlwind Romance with Him",
+          "role": "Webster",
+          "year": "2024"
+        },
+        {
+          "title": "Divorce a Billionaire to Marry Him!",
+          "role": "Alex",
+          "year": "2024"
+        },
+        {
+          "title": "Champion: She’s Not the One",
+          "role": "Michael Claflin",
+          "year": "2024"
+        }
+      ]
+    },
+    {
+      "heading": "Series",
+      "rows": [
+        {
+          "title": "Love Beyond Sight",
+          "role": "Luke Pemberton",
+          "year": "2026"
+        }
+      ]
+    },
+    {
+      "heading": "Film",
+      "rows": [
+        {
+          "title": "Bravery",
+          "role": "Cast · in post-production",
+          "year": "Soon"
+        }
+      ]
+    },
+    {
+      "heading": "Television",
+      "rows": [
+        {
+          "title": "Hitler’s Last Stand",
+          "role": "Reenactor · 1 episode",
+          "year": "2022"
+        }
+      ]
+    },
+    {
+      "heading": "Short film",
+      "rows": [
+        {
+          "title": "The Red Pages",
+          "role": "John",
+          "year": "2021"
+        }
+      ]
+    }
+  ]
+}
